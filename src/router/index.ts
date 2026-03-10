@@ -1,4 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import Homepage from '../components/Homepage.vue'
+import Services from '../components/Services.vue'
+import ContactMe from '../components/ContactMe.vue'
+import Blog from '../components/Blog.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -6,22 +10,22 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: '',
-    },
-    {
-      path: '/about',
-      name: 'about',
-      component: '',
+      component: Homepage,
     },
     {
       path: '/services',
       name: 'services',
-      component: '',
+      component: Services,
     },
     {
-      path: '/contact',
-      name: 'contact',
-      component: '',
+      path: '/contactme',
+      name: 'contactme',
+      component: ContactMe,
+    },
+    {
+      path: '/blog',
+      name: 'blog',
+      component: Blog,
     },
     // Fallback
     {
