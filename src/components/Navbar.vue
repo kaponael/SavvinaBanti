@@ -43,10 +43,10 @@ const isActive = (name: string) => computed(() => route.name === name)
             Services
           </RouterLink>
           <RouterLink
-            :to="{ name: 'contact' }"
+            :to="{ name: 'contactme' }"
             :class="[
               'transition-colors',
-              isActive('contact').value ? 'text-sky-600' : 'hover:text-sky-600',
+              isActive('contactme').value ? 'text-sky-600' : 'hover:text-sky-600',
             ]"
           >
             Contact

@@ -1,9 +1,9 @@
+<script setup lang="ts">
+import ContactSection from './sections/ContactSection.vue'
+</script>
+
 <template>
-  <div>
-    <h1>Contact Me</h1>
-  </div>
+  <main>
+    <ContactSection />
+  </main>
 </template>
-
-<script setup lang="ts"></script>
-
-<style scoped></style>

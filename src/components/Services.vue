@@ -1,9 +1,9 @@
+<script setup lang="ts">
+import ServicesSection from './sections/ServicesSection.vue'
+</script>
+
 <template>
-  <div>
-    <h1>Services</h1>
-  </div>
+  <main>
+    <ServicesSection />
+  </main>
 </template>
-
-<script setup lang="ts"></script>
-
-<style scoped></style>

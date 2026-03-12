@@ -1,9 +1,9 @@
+<script setup lang="ts">
+import BlogSection from './sections/BlogSection.vue'
+</script>
+
 <template>
-  <div>
-    <h1>Blog</h1>
-  </div>
+  <main>
+    <BlogSection />
+  </main>
 </template>
-
-<script setup lang="ts"></script>
-
-<style scoped></style>

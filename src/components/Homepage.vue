@@ -1,9 +1,11 @@
+<script setup lang="ts">
+import HeroSection from './sections/HeroSection.vue'
+import AboutMeSection from './sections/AboutMeSection.vue'
+</script>
+
 <template>
-  <div>
-    <h1>Homepage</h1>
-  </div>
+  <main>
+    <HeroSection />
+    <AboutMeSection />
+  </main>
 </template>
-
-<script setup lang="ts"></script>
-
-<style scoped></style>
