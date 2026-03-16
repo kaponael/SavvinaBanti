@@ -11,14 +11,19 @@ function parseFrontmatter(raw: string): { data: Record<string, string | string[]
   const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)/)
   if (!match) return { data: {}, content: raw }
 
+  const [, frontmatter = '', body = ''] = match
+
   const data: Record<string, string | string[]> = {}
-  const lines = match[1].split('\n')
+  const lines = frontmatter.split('\n')
   let i = 0
 
   while (i < lines.length) {
-    const line = lines[i]
+    const line = lines[i] ?? ''
     const colonIdx = line.indexOf(':')
-    if (colonIdx <= 0) { i++; continue }
+    if (colonIdx <= 0) {
+      i++
+      continue
+    }
 
     const key = line.slice(0, colonIdx).trim()
     const rawValue = line.slice(colonIdx + 1).trim()
@@ -27,8 +32,10 @@ function parseFrontmatter(raw: string): { data: Record<string, string | string[]
     if (rawValue === '') {
       const listItems: string[] = []
       i++
-      while (i < lines.length && lines[i].trimStart().startsWith('- ')) {
-        listItems.push(lines[i].trim().slice(2).trim())
+      while (i < lines.length) {
+        const listLine = lines[i]
+        if (!listLine || !listLine.trimStart().startsWith('- ')) break
+        listItems.push(listLine.trim().slice(2).trim())
         i++
       }
       data[key] = listItems
@@ -39,7 +46,7 @@ function parseFrontmatter(raw: string): { data: Record<string, string | string[]
     i++
   }
 
-  return { data, content: match[2] }
+  return { data, content: body }
 }
 
 const modules = import.meta.glob('/src/content/blog/*.md', { query: '?raw', import: 'default' }) as Record<
