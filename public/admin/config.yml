@@ -3,12 +3,13 @@
 backend:
   name: github
   repo: kaponael/SavvinaBanti
-  branch: feature/pages
-  base_url: https://feature-pages.savvinabanti.pages.dev
+  branch: main
+  base_url: https://sbanti.com/
   auth_endpoint: api/auth
 
 media_folder: public/uploads
 public_folder: /uploads
+
 locale: en
 
 collections:
