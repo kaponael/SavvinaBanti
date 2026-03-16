@@ -32,7 +32,7 @@
               <Phone class="h-6 w-6" />
             </div>
             <div>
-              <p class="text-sm font-medium text-muted-foreground">WhatsApp / Phone</p>
+              <p class="text-sm font-medium text-muted-foreground">{{ t.phoneLabel }}</p>
               <a
                 href="tel:+35799735790"
                 class="text-lg font-bold text-foreground transition-colors hover:text-primary"
@@ -135,7 +135,7 @@
               </div>
             </div>
 
-            <div class="flex items-start gap-5">
+            <div class="flex items-start gap-5 invisible">
               <div
                 class="mt-0.5 flex h-14 w-14 flex-shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary"
               >
@@ -184,13 +184,14 @@ const content = {
     tag: 'Contact',
     title: 'Get in Touch',
     subtitle: 'Feel free to reach out for consultations, questions, or to schedule an appointment.',
+    phoneLabel: 'Phone / WhatsApp / Viber',
     phone: '(+357) 99 735790',
     email: 'savvinabanti@hotmail.com',
     website: 'www.sbanti.com',
     office1: 'Damonos 14, Galazis Court 2',
     office1detail: 'Strovolos 5th Floor, 2064, Nicosia',
-    office2: 'Leoforos Aglantzias 54',
-    office2detail: '2108, Nicosia',
+    office2: '',
+    office2detail: '',
     hours: 'Mon - Fri: 9:00 - 18:00',
     hoursLabel: 'Working Hours',
     officeLabel: 'Office Locations',
@@ -202,13 +203,14 @@ const content = {
     title: 'Επικοινωνήστε Μαζί Μου',
     subtitle:
       'Μη διστάσετε να επικοινωνήσετε για συμβουλευτική, ερωτήσεις ή για να κλείσετε ραντεβού.',
+    phoneLabel: 'Τηλέφωνο / WhatsApp / Viber',
     phone: '(+357) 99 735790',
     email: 'savvinabanti@hotmail.com',
     website: 'www.sbanti.com',
     office1: 'Damonos 14, Galazis Court 2',
     office1detail: 'Strovolos 5th Floor, 2064, Nicosia',
-    office2: 'Leoforos Aglantzias 54',
-    office2detail: '2108, Nicosia',
+    office2: '',
+    office2detail: '',
     hours: 'Δευ - Παρ: 9:00 - 18:00',
     hoursLabel: 'Ώρες Λειτουργίας',
     officeLabel: 'Τοποθεσίες Γραφείων',

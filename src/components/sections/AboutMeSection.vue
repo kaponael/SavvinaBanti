@@ -17,12 +17,21 @@
         </h2>
       </div>
 
-      <div class="mx-auto max-w-4xl space-y-6 text-center">
+      <div class="mx-auto max-w-6xl space-y-6 text-center">
         <p class="text-lg leading-relaxed text-muted-foreground md:text-xl">
           {{ t.description }}
         </p>
         <p class="text-lg leading-relaxed text-muted-foreground md:text-xl">
           {{ t.description2 }}
+        </p>
+        <p class="text-lg leading-relaxed text-muted-foreground md:text-xl">
+          {{ t.description3 }}
+        </p>
+        <p class="text-lg leading-relaxed text-muted-foreground md:text-xl">
+          {{ t.description4 }}
+        </p>
+        <p class="text-lg leading-relaxed text-muted-foreground md:text-xl">
+          {{ t.description5 }}
         </p>
       </div>
 
@@ -62,9 +71,15 @@ const content = {
     tag: 'About Me',
     title: 'Dedicated to Supporting Young Minds',
     description:
-      "With years of professional experience, I specialise in providing comprehensive psychological assessments, counselling, and evidence-based interventions for children and adolescents. My approach is warm, empathetic, and tailored to each individual's unique needs.",
+      "My name is Savvina Banti and I am a Registered School / Educational Psychologist (Registration No. 1070). I am a graduate of the Department of Psychology at the University of Cyprus and hold a Master's Degree in School Psychology (MA) from the same university, with a particular research interest in the cognitive and linguistic profiles of children with learning difficulties and chronic conditions, such as epilepsy. My postgraduate studies were supported by an educational scholarship from the Onassis Foundation.",
     description2:
-      'I work closely with families, schools, and other professionals to ensure holistic support for every child. Whether addressing learning difficulties, emotional challenges, or behavioural concerns, my goal is to empower children to reach their full potential.',
+      'As part of my professional training, I completed approximately 1800 hours of supervised practical training as a Trainee School / Educational Psychologist at the Educational Psychology Service of the Ministry of Education, Sports, and Youth. During this time, I gained significant experience in psycho-diagnostic assessment, individualized intervention, and counseling of children and adolescents across all educational levels. I also gained experience in counseling parents and teachers, as well as in designing and implementing intervention programs, psychoeducational presentations, and experiential workshops',
+    description3:
+      'During my studies, I worked on research projects at the Center for Applied Neuroscience (e.g., Neo-PRISM-C, ReaDI-STANCE), gaining experience in cognitive assessments and psychophysiological measurements (e.g., eye-tracking, EEG) with school-aged children. I later worked as a research assistant at Stockholm University, where I studied the development of emotional regulation in children and adolescents.',
+    description4:
+      'At the same time, I participated in a European research project led by the Hope For Children CRC Policy Center, where I was trained as an activist to strengthen actions against hate speech in Cyprus. I am also accredited as a trainer for the ViSC program for the prevention of school bullying, through which I have provided training to parents and teachers.',
+    description5:
+      'I currently work in private practice in the Nicosia district, where I provide psychological services to children, adolescents, parents, and teachers.',
     stats: [
       { icon: GraduationCap, label: 'Specialised Training', value: 'MSc Educational Psychology' },
       { icon: Heart, label: 'Approach', value: 'Child-Centred Care' },
@@ -76,9 +91,15 @@ const content = {
     tag: 'Σχετικά με Εμένα',
     title: 'Αφιερωμένη στην Υποστήριξη των Νεαρών Μυαλών',
     description:
-      'Με χρόνια επαγγελματικής εμπειρίας, εξειδικεύομαι στην παροχή ολοκληρωμένων ψυχολογικών αξιολογήσεων, συμβουλευτικής και τεκμηριωμένων παρεμβάσεων για παιδιά και εφήβους. Η προσέγγισή μου είναι ζεστή, εμπαθητική και προσαρμοσμένη στις μοναδικές ανάγκες κάθε ατόμου.',
+      'Ονομάζομαι Σαββίνα Μπαντή και είμαι Εγγεγραμμένη Σχολική/Εκπαιδευτική Ψυχολόγος (Αρ. Μητρώου 1070). Είμαι απόφοιτη του Τμήματος Ψυχολογίας του Πανεπιστημίου Κύπρου και κάτοχος Μεταπτυχιακού στη Σχολική Ψυχολογία (MA) από το ίδιο Πανεπιστήμιο, με ιδιαίτερο ερευνητικό ενδιαφέρον στα γνωστικά και γλωσσικά προφίλ παιδιών με μαθησιακές δυσκολίες και με χρόνιες παθήσεις, όπως η επιληψία. Οι μεταπτυχιακές μου σπουδές υποστηρίχθηκαν από εκπαιδευτική υποτροφία του Ιδρύματος Ωνάση.',
     description2:
-      'Συνεργάζομαι στενά με οικογένειες, σχολεία και άλλους επαγγελματίες για να εξασφαλίσω ολιστική υποστήριξη για κάθε παιδί. Είτε πρόκειται για μαθησιακές δυσκολίες, συναισθηματικές προκλήσεις ή συμπεριφορικά ζητήματα, στόχος μου είναι να ενδυναμώσω τα παιδιά να φτάσουν στο μέγιστο των δυνατοτήτων τους.',
+      'Στο πλαίσιο της επαγγελματικής μου κατάρτισης, ολοκλήρωσα ~1800 ώρες εποπτευόμενης πρακτικής άσκησης ως Ειδικευόμενη Σχολική/Εκπαιδευτική Ψυχολόγος στην Υπηρεσία Εκπαιδευτικής Ψυχολογίας του Υπουργείου Παιδείας, Αθλητισμού και Νεολαίας, αποκτώντας σημαντική εμπειρία στην ψυχομετρική και διαγνωστική αξιολογήση και στην εξατομικευμένη παρέμβαση και θεραπεία παιδιών και εφήβων όλων των εκπαιδευτικών βαθμίδων. Επίσης, απέκτησα εμπειρία στην συμβουλευτική γονέων και εκπαιδευτικών, καθώς και στον σχεδιασμό και την εφαρμογή παρεμβατικών προγραμμάτων,  ψυχοεκπαιδευτικών παρουσιάσεων και βιωματικών εργαστηρίων.',
+    description3:
+      'Κατά την διάρκεια των σπουδών μου, έχω εργαστεί σε ερευνητικά προγράμματα του Κέντρου Εφαρμοσμένης Νευροεπιστήμης (π.χ. Neo-PRISM-C, ReaDI-STANCE), με εμπειρία σε γνωστικές αξιολογήσεις και ψυχοφυσιολογικές μετρήσεις (π.χ. eye-tracking, EEG) σε παιδιά σχολικής ηλικίας. Έπειτα, δραστηριοποιήθηκα ως ερευνητικό προσωπικό στο Πανεπιστήμιο Στοκχόλμης μελετώντας την ανάπτυξη της συναισθηματικής ρύθμισης στα παιδιά και στους εφήβους.',
+    description4:
+      'Παράλληλα, συμμετείχα σε ευρωπαϊκό ερευνητικό πρόγραμμα του Hope For Children CRC Policy Center, όπου εκπαιδεύτηκα ως ακτιβίστρια για την ενίσχυση δράσεων κατά της ρητορικής μίσους (hate speech) στην κυπριακή κοινωνία. Επίσης, έχω διαπιστευθεί ως εκπαιδεύτρια του προγράμματος ViSC για την πρόληψη του σχολικού εκφοβισμού, κατά το οποίο πραγματοποίησα εκπαιδεύσεις γονέων και εκπαιδευτικών.',
+    description5:
+      'Στην παρούσα φάση, εργάζομαι ιδιωτικά στην επαρχία Λευκωσίας προσφέροντας ψυχολογικές υπηρεσίες σε παιδιά, εφήβους, γονείς και εκπαιδευτικούς.',
     stats: [
       {
         icon: GraduationCap,

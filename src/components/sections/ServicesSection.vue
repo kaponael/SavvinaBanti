@@ -16,7 +16,7 @@
           {{ t.title }}
         </h2>
 
-        <p class="mx-auto mt-5 max-w-3xl text-lg text-muted-foreground md:text-xl">
+        <p class="mx-auto mt-5 max-w-5xl text-lg text-muted-foreground md:text-xl">
           {{ t.subtitle }}
         </p>
       </div>
@@ -67,39 +67,39 @@ const content = {
     services: [
       {
         icon: Brain,
-        title: 'Psychoeducational Assessments',
+        title: 'Psycho-diagnostic Assessment of Child and Adolescent',
         description:
-          'Comprehensive cognitive, academic, and social-emotional assessments to identify learning strengths and areas of need.',
-      },
-      {
-        icon: BookOpen,
-        title: 'Learning Difficulties',
-        description:
-          'Specialised support for dyslexia, dyscalculia, ADHD, and other specific learning difficulties with tailored intervention plans.',
-      },
-      {
-        icon: MessageCircle,
-        title: 'Counselling & Therapy',
-        description:
-          'Evidence-based therapeutic interventions for anxiety, depression, self-esteem issues, and emotional wellbeing.',
-      },
-      {
-        icon: Users,
-        title: 'Family Consultation',
-        description:
-          "Guidance and support for parents navigating their child's developmental, emotional, or behavioural challenges.",
-      },
-      {
-        icon: Lightbulb,
-        title: 'School Consultation',
-        description:
-          'Collaborating with educators to develop effective strategies, accommodations, and individual education plans.',
+          "Psycho-diagnostic assessment is a comprehensive process of understanding the cognitive, emotional, social, and learning abilities of a child or adolescent. Using evidence-based tools, observation, and interviews with the child, family, and, when necessary, the school, the goal is to clearly identify the child's strengths and difficulties. The assessment contributes to the reliable diagnosis of learning difficulties, ADHD and autism, the early identification of emotional or behavioral difficulties, as well as to the formulation of individualized recommendations for support, both in the school and family environment.",
       },
       {
         icon: Shield,
-        title: 'Behavioural Support',
+        title: 'Individual Intervention for the Child/Adolescent',
         description:
-          'Assessment and intervention for behavioural concerns, including functional analysis and positive behaviour strategies.',
+          'Individual intervention offers personalized support to children and adolescents, with the aim of strengthening their emotional, behavioral, and social development and managing difficulties that affect their daily functioning.',
+      },
+      {
+        icon: MessageCircle,
+        title: 'Parent Counseling',
+        description:
+          "Parent counseling aims to support and empower parents in their role, offering guidance on understanding and managing their child's or adolescent's needs. Communication, emotional connection, and effective coping with daily difficulties are enhanced through collaboration and practical guidelines.",
+      },
+      {
+        icon: Users,
+        title: 'Teacher Counseling / Cooperation with Other Professionals',
+        description:
+          "Teacher counselling and cooperation with other specialists aim to provide coordinated support for the child within the school and broader context. Through the exchange of necessary information and joint planning, effective coping with difficulties and the enhancement of the child's functionality are promoted.",
+      },
+      {
+        icon: Lightbulb,
+        title: 'Experiential Workshops',
+        description:
+          'Experiential workshops provide a structured and interactive learning environment to promote social, emotional, and communication skills. Workshops can be customized to the needs of each organization or client (e.g., schools, youth centers, municipalities.',
+      },
+      {
+        icon: BookOpen,
+        title: 'Psychoeducational Seminars / Presentations',
+        description:
+          'Psychoeducational seminars and presentations provide reliable and practical information to parents, teachers, and professionals in order to understand the development, difficulties, and psychosocial functioning of children and adolescents. Seminars and presentations can be customized to the needs of the audience and the client, offering helpful tools and strategies for everyday use.',
       },
     ],
   },
@@ -111,39 +111,39 @@ const content = {
     services: [
       {
         icon: Brain,
-        title: 'Ψυχοεκπαιδευτικές Αξιολογήσεις',
+        title: 'Ψυχο-διαγνωστική Αξιολόγηση Παιδιού και Εφήβου',
         description:
-          'Ολοκληρωμένες γνωστικές, ακαδημαϊκές και κοινωνικο-συναισθηματικές αξιολογήσεις για τον εντοπισμό δυνατών σημείων και περιοχών ανάγκης.',
-      },
-      {
-        icon: BookOpen,
-        title: 'Μαθησιακές Δυσκολίες',
-        description:
-          'Εξειδικευμένη υποστήριξη για δυσλεξία, δυσαριθμησία, ΔΕΠΥ και άλλες ειδικές μαθησιακές δυσκολίες.',
-      },
-      {
-        icon: MessageCircle,
-        title: 'Συμβουλευτική & Θεραπεία',
-        description:
-          'Τεκμηριωμένες θεραπευτικές παρεμβάσεις για άγχος, κατάθλιψη, αυτοεκτίμηση και συναισθηματική ευημερία.',
-      },
-      {
-        icon: Users,
-        title: 'Οικογενειακή Συμβουλευτική',
-        description:
-          'Καθοδήγηση και υποστήριξη γονέων που αντιμετωπίζουν αναπτυξιακές, συναισθηματικές ή συμπεριφορικές προκλήσεις των παιδιών τους.',
-      },
-      {
-        icon: Lightbulb,
-        title: 'Σχολική Συμβουλευτική',
-        description:
-          'Συνεργασία με εκπαιδευτικούς για την ανάπτυξη αποτελεσματικών στρατηγικών και εξατομικευμένων εκπαιδευτικών προγραμμάτων.',
+          'Η ψυχο-διαγνωστική αξιολόγηση αποτελεί μια ολοκληρωμένη διαδικασία κατανόησης των γνωστικών, συναισθηματικών, κοινωνικών και μαθησιακών δυνατοτήτων του παιδιού ή εφήβου. Μέσα από επιστημονικά τεκμηριωμένα εργαλεία, παρατήρηση και συνεντεύξεις με το παιδί, την οικογένεια και όπου χρειάζεται το σχολείο, στόχος είναι η σαφής αποτύπωση των δυνατών σημείων αλλά και των δυσκολιών του παιδιού. Η αξιολόγηση συμβάλλει στην έγκυρη διάγνωση μαθησιακών δυσκολιών, ΔΕΠ-Υ και αυτισμού, στην έγκαιρη αναγνώριση συναισθηματικών ή συμπεριφορικών δυσκολιών, καθώς και στην παροχή εξατομικευμένων εισηγήσεων για υποστήριξη στο σχολικό και οικογενειακό πλαίσιο.',
       },
       {
         icon: Shield,
-        title: 'Συμπεριφορική Υποστήριξη',
+        title: 'Ατομική Παρέμβαση Παιδιού/Εφήβου',
         description:
-          'Αξιολόγηση και παρέμβαση για συμπεριφορικά ζητήματα, συμπεριλαμβανομένης λειτουργικής ανάλυσης και στρατηγικών θετικής συμπεριφοράς.',
+          'Η ατομική παρέμβαση προσφέρει εξατομικευμένη υποστήριξη σε παιδιά και εφήβους, με στόχο την ενίσχυση της συναισθηματικής, συμπεριφορικής και κοινωνικής τους ανάπτυξης και τη διαχείριση δυσκολιών που επηρεάζουν τη λειτουργικότητά τους στην καθημερινότητα.',
+      },
+      {
+        icon: MessageCircle,
+        title: 'Συμβουλευτική Γονέων',
+        description:
+          'Η συμβουλευτική γονέων στοχεύει στην υποστήριξη και ενδυνάμωση των γονέων στον ρόλο τους, προσφέροντας καθοδήγηση για την κατανόηση και τη διαχείριση των αναγκών του παιδιού ή εφήβου. Μέσα από συνεργασία και πρακτικές κατευθύνσεις, ενισχύεται η επικοινωνία, η συναισθηματική σύνδεση και η αποτελεσματική αντιμετώπιση καθημερινών δυσκολιών.',
+      },
+      {
+        icon: Users,
+        title: 'Συμβουλευτική Εκπαιδευτικών / Συνεργασία με άλλους ειδικούς',
+        description:
+          'Η συμβουλευτική εκπαιδευτικών και η συνεργασία με άλλους ειδικούς στοχεύει στη συντονισμένη υποστήριξη του παιδιού μέσα στο σχολικό και ευρύτερο πλαίσιο. Μέσα από ανταλλαγή πληροφοριών και κοινό σχεδιασμό, προάγεται η αποτελεσματική αντιμετώπιση δυσκολιών και η ενίσχυση της λειτουργικότητας του παιδιού.',
+      },
+      {
+        icon: Lightbulb,
+        title: 'Βιωματικά Εργαστήρια',
+        description:
+          ' Τα βιωματικά εργαστήρια παρέχουν ένα δομημένο και διαδραστικό περιβάλλον, με στόχο την ενίσχυση κοινωνικών, συναισθηματικών και επικοινωνιακών δεξιοτήτων. Τα εργαστήρια μπορούν να προσαρμοστούν στις ανάγκες του εκάστοτε φορέα ή πελάτη (π.χ. σχολεία, κέντρα, δήμοι)',
+      },
+      {
+        icon: BookOpen,
+        title: 'Ψυχοεκπαιδευτικά Σεμινάρια / Παρουσιάσεις',
+        description:
+          'Τα ψυχοεκπαιδευτικά σεμινάρια και οι παρουσιάσεις παρέχουν έγκυρη και πρακτική πληροφόρηση σε γονείς, εκπαιδευτικούς και επαγγελματίες, με στόχο την κατανόηση της ανάπτυξης, των δυσκολιών και της ψυχοκοινωνικής λειτουργίας παιδιών και εφήβων. Τα σεμινάρια και οι παρουσιάσεις μπορούν να προσαρμοστούν στις ανάγκες του κοινού και του πελάτη, προσφέροντας χρήσιμα εργαλεία και στρατηγικές για καθημερινή εφαρμογή.',
       },
     ],
   },

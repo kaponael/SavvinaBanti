@@ -31,15 +31,15 @@
           {{ t.subtitle }}
         </p>
         <div class="mt-10 flex flex-col items-center gap-4 sm:flex-row md:items-start">
-          <RouterLink
-            to="/about"
+          <a
+            href="#about"
             class="inline-flex items-center gap-3 rounded-full bg-primary px-10 py-4 text-lg font-bold text-primary-foreground shadow-xl shadow-primary/25 transition-all hover:-translate-y-1 hover:shadow-2xl hover:shadow-primary/35"
           >
             {{ t.cta }}
             <ArrowDown class="h-5 w-5" />
-          </RouterLink>
+          </a>
           <RouterLink
-            to="/contact"
+            to="/contactme"
             class="inline-flex items-center gap-3 rounded-full border-2 border-border px-10 py-4 text-lg font-bold text-foreground transition-all hover:border-primary hover:bg-primary/5"
           >
             {{ t.cta2 }}
@@ -56,7 +56,7 @@
             class="relative flex h-full w-full items-center justify-center rounded-full border-2 border-primary/20 bg-card shadow-2xl shadow-primary/15"
           >
             <img
-              src="../assets/sbanti_picture.jpg"
+              src="../../assets/sbanti_picture.jpg"
               alt="Savvina Banti"
               class="h-full w-full rounded-full object-cover"
             />
@@ -71,7 +71,6 @@
 import { computed } from 'vue'
 import { useLanguage } from '../../composables/useLanguage'
 import { ArrowDown } from 'lucide-vue-next'
-import { RouterLink } from 'vue-router'
 
 const { lang } = useLanguage()
 
