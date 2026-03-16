@@ -1,21 +1,14 @@
-# local_backend lets you use the CMS without any live credentials while developing.
-# Run `npm run cms` alongside `npm run dev` to activate it.
-# IMPORTANT: comment out local_backend before deploying to Cloudflare Pages.
-local_backend: true
+# local_backend: true
 
 backend:
   name: github
   repo: kaponael/SavvinaBanti
-  branch: main
-  # Replace with your actual Cloudflare Pages domain after first deploy.
-  base_url: https://savvinabanti.pages.dev
+  branch: feature/pages
+  base_url: https://feature-pages.savvinabanti.pages.dev
   auth_endpoint: api/auth
 
-# Media uploads go into public/uploads and are served from /uploads
 media_folder: public/uploads
 public_folder: /uploads
-
-# The locale for the editor UI
 locale: en
 
 collections:
@@ -24,15 +17,20 @@ collections:
     folder: src/content/blog
     create: true
     delete: true
-    slug: "{{slug}}"
+    slug: '{{slug}}'
     format: frontmatter
     fields:
       - { label: Title, name: title, widget: string }
-      - { label: Publish Date, name: date, widget: datetime, format: "YYYY-MM-DD" }
-      - { label: Description, name: description, widget: text, hint: "A short summary shown on the blog listing page." }
+      - { label: Publish Date, name: date, widget: datetime, format: 'YYYY-MM-DD' }
+      - {
+          label: Description,
+          name: description,
+          widget: text,
+          hint: 'A short summary shown on the blog listing page.',
+        }
       - label: Tags
         name: tags
         widget: list
         required: false
-        hint: "Optional comma-separated tags (e.g. mental health, parenting)"
+        hint: 'Optional comma-separated tags (e.g. mental health, parenting)'
       - { label: Body, name: body, widget: markdown }
