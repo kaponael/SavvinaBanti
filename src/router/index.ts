@@ -1,23 +1,48 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Homepage from '../components/Homepage.vue'
+import Services from '../components/Services.vue'
+import ContactMe from '../components/ContactMe.vue'
+import Blog from '../components/Blog.vue'
+import BlogPostPage from '../components/BlogPostPage.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(),
   routes: [
     {
       path: '/',
       name: 'home',
-      component: HomeView,
+      component: Homepage,
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue'),
+      path: '/services',
+      name: 'services',
+      component: Services,
+    },
+    {
+      path: '/contactme',
+      name: 'contactme',
+      component: ContactMe,
+    },
+    {
+      path: '/blog',
+      name: 'blog',
+      component: Blog,
+    },
+    {
+      path: '/blog/:slug',
+      name: 'blog-post',
+      component: BlogPostPage,
+    },
+    // Fallback
+    {
+      path: '/:pathMatch(.*)*',
+      redirect: '/',
     },
   ],
+  scrollBehavior() {
+    // Always scroll to top on navigation
+    return { top: 0 }
+  },
 })
 
 export default router
