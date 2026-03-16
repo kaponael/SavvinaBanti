@@ -155,16 +155,14 @@
           <!-- Embedded Map -->
           <div class="overflow-hidden rounded-2xl border-2 border-border">
             <iframe
-              title="Office location map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.5!2d33.35!3d35.15!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDA5JzAwLjAiTiAzM8KwMjEnMDAuMCJF!5e0!3m2!1sen!2scy!4v1700000000000!5m2!1sen!2scy"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.89020827185!2d33.34223752542301!3d35.15935880846595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14de1b1e3b34c827%3A0x9bc5dc5a75f31761!2sOrestis%20Kasinopoulos%20PhD%20%7C%20Licensed%20Clinical%20Psychologist%20%7C%20The%20Safe%20Place%20Project!5e0!3m2!1sen!2s!4v1773683854486!5m2!1sen!2s"
               width="100%"
               height="220"
               style="border: 0"
               allowfullscreen
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              class="grayscale transition-all duration-500 hover:grayscale-0"
-            />
+            ></iframe>
           </div>
         </div>
       </div>

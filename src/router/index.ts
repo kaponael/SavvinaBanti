@@ -3,6 +3,7 @@ import Homepage from '../components/Homepage.vue'
 import Services from '../components/Services.vue'
 import ContactMe from '../components/ContactMe.vue'
 import Blog from '../components/Blog.vue'
+import BlogPostPage from '../components/BlogPostPage.vue'
 
 const router = createRouter({
   history: createWebHistory(),
@@ -26,6 +27,11 @@ const router = createRouter({
       path: '/blog',
       name: 'blog',
       component: Blog,
+    },
+    {
+      path: '/blog/:slug',
+      name: 'blog-post',
+      component: BlogPostPage,
     },
     // Fallback
     {
