@@ -35,7 +35,7 @@ watch(
 </script>
 
 <template>
-  <header class="sticky top-0 z-30 border-b bg-white/80">
+  <header class="sticky top-0 z-30 border-b bg-white">
     <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
       <div class="flex items-center gap-3">
         <div class="relative flex items-center justify-center bg-card shadow-2xl shadow-primary/15">
