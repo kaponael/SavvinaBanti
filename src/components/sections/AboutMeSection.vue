@@ -73,7 +73,7 @@ const content = {
     description:
       "My name is Savvina Banti and I am a Registered School / Educational Psychologist (Registration No. 1070). I am a graduate of the Department of Psychology at the University of Cyprus and hold a Master's Degree in School Psychology (MA) from the same university, with a particular research interest in the cognitive and linguistic profiles of children with learning difficulties and chronic conditions, such as epilepsy. My postgraduate studies were supported by an educational scholarship from the Onassis Foundation.",
     description2:
-      'As part of my professional training, I completed approximately 1800 hours of supervised practical training as a Trainee School / Educational Psychologist at the Educational Psychology Service of the Ministry of Education, Sports, and Youth. During this time, I gained significant experience in psycho-diagnostic assessment, individualized intervention, and counseling of children and adolescents across all educational levels. I also gained experience in counseling parents and teachers, as well as in designing and implementing intervention programs, psychoeducational presentations, and experiential workshops',
+      'As part of my professional training, I completed approximately 1800 hours of supervised practical training as a Trainee School / Educational Psychologist at the Educational Psychology Service of the Ministry of Education, Sports, and Youth. During this time, I gained significant experience in psycho-diagnostic assessment, individualized intervention, and counseling of children and adolescents across all educational levels. I also gained experience in counseling parents and teachers, as well as in designing and implementing intervention programs, psychoeducational presentations, and experiential workshops.',
     description3:
       'During my studies, I worked on research projects at the Center for Applied Neuroscience (e.g., Neo-PRISM-C, ReaDI-STANCE), gaining experience in cognitive assessments and psychophysiological measurements (e.g., eye-tracking, EEG) with school-aged children. I later worked as a research assistant at Stockholm University, where I studied the development of emotional regulation in children and adolescents.',
     description4:
@@ -81,10 +81,26 @@ const content = {
     description5:
       'I currently work in private practice in the Nicosia district, where I provide psychological services to children, adolescents, parents, and teachers.',
     stats: [
-      { icon: GraduationCap, label: 'Specialised Training', value: 'MSc Educational Psychology' },
-      { icon: Heart, label: 'Approach', value: 'Child-Centred Care' },
-      { icon: Users, label: 'Collaboration', value: 'Families & Schools' },
-      { icon: Award, label: 'Registration', value: 'No. 1070' },
+      {
+        icon: GraduationCap,
+        label: 'Specialised Training',
+        value: 'MA Educational Psychology',
+      },
+      {
+        icon: Heart,
+        label: 'Approach',
+        value: 'Holistic, Evidence-Based',
+      },
+      {
+        icon: Users,
+        label: 'Collaboration',
+        value: 'Families & Schools',
+      },
+      {
+        icon: Award,
+        label: 'Registration Number',
+        value: 'No. 1070',
+      },
     ],
   },
   gr: {
@@ -104,11 +120,23 @@ const content = {
       {
         icon: GraduationCap,
         label: 'Εξειδικευμένη Εκπαίδευση',
-        value: 'MSc Εκπαιδευτική Ψυχολογία',
+        value: 'MA Εκπαιδευτική Ψυχολογία',
       },
-      { icon: Heart, label: 'Προσέγγιση', value: 'Παιδοκεντρική Φροντίδα' },
-      { icon: Users, label: 'Συνεργασία', value: 'Οικογένειες & Σχολεία' },
-      { icon: Award, label: 'Εγγραφή', value: 'Αρ. 1070' },
+      {
+        icon: Heart,
+        label: 'Προσέγγιση',
+        value: 'Ολιστική, Εμπειρικά Τεκμηριωμένη',
+      },
+      {
+        icon: Users,
+        label: 'Συνεργασία',
+        value: 'Οικογένειες & Σχολεία',
+      },
+      {
+        icon: Award,
+        label: 'Αριθμός Εγγραφής',
+        value: 'Αρ. 1070',
+      },
     ],
   },
 } as const
