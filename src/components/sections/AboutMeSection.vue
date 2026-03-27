@@ -73,7 +73,7 @@ const content = {
       {
         icon: GraduationCap,
         label: 'Specialised Training',
-        value: 'MA Educational Psychology',
+        value: 'MA in School Psychology',
       },
       {
         icon: Heart,
@@ -109,7 +109,7 @@ const content = {
       {
         icon: GraduationCap,
         label: 'Εξειδικευμένη Εκπαίδευση',
-        value: 'MA Εκπαιδευτική Ψυχολογία',
+        value: 'MA στην Σχολική Ψυχολογία',
       },
       {
         icon: Heart,
