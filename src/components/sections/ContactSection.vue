@@ -4,21 +4,7 @@
     <div class="absolute left-0 right-0 top-0 h-1 bg-primary/20" />
 
     <div class="mx-auto max-w-7xl px-6">
-      <div class="mb-16 text-center">
-        <span
-          class="mb-4 inline-block rounded-full border-2 border-primary/20 bg-primary/10 px-6 py-2 text-sm font-bold uppercase tracking-widest text-primary"
-        >
-          {{ t.tag }}
-        </span>
-        <h2
-          class="text-balance text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl"
-        >
-          {{ t.title }}
-        </h2>
-        <p class="mx-auto mt-5 max-w-3xl text-lg text-muted-foreground md:text-xl">
-          {{ t.subtitle }}
-        </p>
-      </div>
+      <SectionHeader :tag="t.tag" :title="t.title" :subtitle="t.subtitle" />
 
       <div class="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">
         <!-- Contact Details Card -->
@@ -155,7 +141,7 @@
           <!-- Embedded Map -->
           <div class="overflow-hidden rounded-2xl border-2 border-border">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.89020827185!2d33.34223752542301!3d35.15935880846595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14de1b1e3b34c827%3A0x9bc5dc5a75f31761!2sOrestis%20Kasinopoulos%20PhD%20%7C%20Licensed%20Clinical%20Psychologist%20%7C%20The%20Safe%20Place%20Project!5e0!3m2!1sen!2s!4v1773683854486!5m2!1sen!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.891200740571!2d33.342228375423026!3d35.15933405846739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14de1b9619168c5b%3A0x1dd92a567bc38e3a!2sThe%20Safe%20Place%20Project%20(Strovolos)!5e0!3m2!1sen!2s!4v1774639685601!5m2!1sen!2s"
               width="100%"
               height="220"
               style="border: 0"
@@ -174,6 +160,7 @@
 import { computed } from 'vue'
 import { useLanguage } from '../../composables/useLanguage'
 import { Phone, Mail, Globe, MapPin, Clock } from 'lucide-vue-next'
+import SectionHeader from '../SectionHeader.vue'
 
 const { lang } = useLanguage()
 

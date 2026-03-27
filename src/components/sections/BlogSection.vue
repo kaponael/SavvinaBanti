@@ -3,21 +3,7 @@
     <div class="absolute left-0 right-0 top-0 h-1 bg-primary/20" />
 
     <div class="relative mx-auto max-w-7xl px-6">
-      <div class="mb-16 text-center">
-        <span
-          class="mb-4 inline-block rounded-full border-2 border-primary/20 bg-primary/10 px-6 py-2 text-sm font-bold uppercase tracking-widest text-primary"
-        >
-          {{ t.tag }}
-        </span>
-        <h2
-          class="text-balance text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl"
-        >
-          {{ t.title }}
-        </h2>
-        <p class="mx-auto mt-5 max-w-3xl text-lg text-muted-foreground md:text-xl">
-          {{ t.subtitle }}
-        </p>
-      </div>
+      <SectionHeader :tag="t.tag" :title="t.title" :subtitle="t.subtitle" />
 
       <!-- Loading state -->
       <div v-if="loading" class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -101,6 +87,7 @@ import { RouterLink } from 'vue-router'
 import { Calendar, ArrowRight, BookOpen } from 'lucide-vue-next'
 import { useLanguage } from '../../composables/useLanguage'
 import { loadBlogPosts, formatDate, type BlogPost } from '../../composables/useBlogPosts'
+import SectionHeader from '../SectionHeader.vue'
 
 const { lang } = useLanguage()
 
