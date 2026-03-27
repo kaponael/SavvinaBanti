@@ -56,7 +56,7 @@
             class="relative flex h-full w-full items-center justify-center rounded-full border-2 border-primary/20 bg-card shadow-2xl shadow-primary/15"
           >
             <img
-              src="../../assets/sbanti_picture.jpg"
+              src="../../assets/sbanti_picture.jpeg"
               alt="Savvina Banti"
               class="h-full w-full rounded-full object-cover"
             />
