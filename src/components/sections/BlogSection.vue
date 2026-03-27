@@ -74,9 +74,7 @@
               {{ post.description }}
             </p>
 
-            <div
-              class="mt-6 flex items-center gap-2 text-sm font-bold text-primary"
-            >
+            <div class="mt-6 flex items-center gap-2 text-sm font-bold text-primary">
               {{ t.readMore }}
               <ArrowRight class="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </div>
@@ -117,7 +115,7 @@ onMounted(async () => {
 const content = {
   en: {
     tag: 'Blog',
-    title: 'Insights & Resources',
+    title: 'Articles',
     subtitle:
       'Articles on child psychology, parenting, and mental health — written to inform and support families.',
     readMore: 'Read article',
@@ -125,7 +123,7 @@ const content = {
   },
   gr: {
     tag: 'Ιστολόγιο',
-    title: 'Άρθρα & Πόροι',
+    title: 'Αρθρογραφία',
     subtitle:
       'Άρθρα για την παιδική ψυχολογία, τη γονεϊκότητα και την ψυχική υγεία — γραμμένα για να ενημερώνουν και να υποστηρίζουν τις οικογένειες.',
     readMore: 'Διαβάστε το άρθρο',
