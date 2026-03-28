@@ -15,6 +15,8 @@ const content = {
     contact: 'Contact',
     blog: 'Blog',
     toggleMenu: 'Toggle navigation menu',
+    heroName: 'Savvina Banti',
+    heroTitle: 'Registered School / Educational Psychologist',
   },
   gr: {
     home: 'Αρχική',
@@ -22,9 +24,12 @@ const content = {
     contact: 'Επικοινωνία',
     blog: 'Ιστολόγιο',
     toggleMenu: 'Εναλλαγή μενού πλοήγησης',
+    heroName: 'Σαββίνα Μπαντή',
+    heroTitle: 'Εγγεγραμμένη Σχολική / Εκπαιδευτική Ψυχολόγος',
   },
 } as const
 const t = computed(() => content[lang.value])
+const showHeroIdentity = computed(() => route.name !== 'home')
 
 watch(
   () => route.fullPath,
@@ -37,7 +42,7 @@ watch(
 <template>
   <header class="sticky top-0 z-30 border-b bg-white">
     <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
-      <div class="flex items-center gap-3">
+      <div class="flex min-w-0 items-center gap-2 sm:gap-3">
         <div class="relative flex items-center justify-center bg-card shadow-2xl shadow-primary/15">
           <RouterLink
             :to="{ name: 'home' }"
@@ -52,6 +57,16 @@ watch(
               class="h-11 w-11 object-cover"
             />
           </RouterLink>
+        </div>
+        <div v-if="showHeroIdentity" class="min-w-0 max-w-38 sm:max-w-48">
+          <p class="truncate text-xs font-bold leading-tight text-foreground sm:text-sm md:text-base">
+            {{ t.heroName }}
+          </p>
+          <p
+            class="navbar-hero-title-mobile text-[10px] font-semibold leading-tight text-primary sm:text-xs md:text-sm"
+          >
+            {{ t.heroTitle }}
+          </p>
         </div>
       </div>
 
@@ -207,3 +222,15 @@ watch(
     </div>
   </header>
 </template>
+
+<style scoped>
+@media (max-width: 767px) {
+  .navbar-hero-title-mobile {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+  }
+}
+</style>
